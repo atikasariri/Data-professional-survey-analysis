@@ -1,0 +1,28 @@
+# Power BI Project (PBIP) specific files
+*.gitpbi
+.platform
+*.UserData
+*.Settings
+*.localenv
+
+
+#Temporary and Cache files
+.tmp
+.temp
+.bak
+~$.xlsx
+~$.docx
+~$.pptx
+
+#Power BI Backup and Auto-Recovery files
+.AutoRecovery
+
+#System & OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+#Environment and Credentials (if any)
+.env
+*.key
+*.pem
