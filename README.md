@@ -2,6 +2,10 @@
 
 An interactive Power BI dashboard analyzing global survey data from over 600 data professionals. This project explores key industry trends, salary distributions, work-life satisfaction, and barriers to entering the data field.
 
+[![Power BI](https://img.shields.io/badge/Power%20BI-Interactive%20Dashboard-yellow?logo=powerbi)](https://github.com/atikasariri/Data-professional-survey-analysis)
+[![Domain](https://img.shields.io/badge/Domain-Career%20&%20Workforce%20Analytics-orange)](#)
+[![Role](https://img.shields.io/badge/Role-Data%20Analyst-blue)](#)
+
 
 _**Dashboard Preview**_
 
@@ -12,38 +16,48 @@ _**Dashboard Preview**_
 > Download the *.pbix* file from this repository to explore all interactive filters, tooltips, and slicers in Power BI Desktop.
 
 
-_**Project Overview & Objectives**_
+_**Business Overview & Problem Statement**_
 
-The goal of this analysis is to provide actionable insights into the current landscape of data careers (Data Analysts, Data Scientists, Data Engineers, etc.). 
+The data industry is evolving rapidly, with professionals transitioning from diverse backgrounds, entering various job roles (such as Data Analyst, Data Scientist, and Data Engineer), and experiencing different levels of job satisfaction and salary distributions. 
 
-Key questions addressed:
-- **Demographics & Roles:** Who is working in data, and what are their current job titles?
-- **Compensation:** How does average salary vary by job role and gender?
-- **Job Satisfaction:** How content are professionals with their salaries, work-life balance, management, and growth opportunities?
-- **Career Entry & Switching:** How difficult is it to break into the industry, and how many professionals switched careers into data?
-- **Tech Stack:** What are the most popular programming languages among data practitioners?
+Without structured exploratory data analysis and interactive reporting, stakeholders face challenges in:
+* Understanding salary benchmarks across different job titles, industries, and experience levels.
+* Identifying the primary challenges professionals face when breaking into the data field.
+* Evaluating overall job satisfaction factors (including work-life balance, management, and salary).
 
 
-_**Tools & Tech Stack**_
+_**Data Architecture & Tools Used**_
 
-- **Power BI Desktop:** Data modeling, DAX measures, and interactive visual design.
-- **Power Query:** Data cleaning, handling missing values, unpivoting satisfaction metrics, and transformation.
-- **Dataset:** Data Professional Survey (CSV/Excel format containing demographic, career, and salary metrics).
+* **Data Preparation & Transformation:** Excel / Power Query
+* **Dashboarding & Visualization:** Power BI Desktop
+* **Core Analytics Focus:** Salary Distribution, Career Transition Trends, Programming Language Popularity, Job Satisfaction Metrics, and Workforce Demographics
 
 
-_**Key Insights & Findings**_
+_**Key Business Insights**_
 
-1. **Job Roles & Demographics:** Data Analysts represent the largest segment of respondents, followed by Data Scientists and Data Engineers.
-2. **Career Transition:** A significant majority of respondents successfully transitioned into data from non-technical background roles.
-3. **Satisfaction vs. Salary:** While satisfaction with work-life balance and coworkers trends higher, satisfaction with salary and upward mobility remains a key area of concern for mid-level professionals.
-4. **Favorite Programming Languages:** Python remains the most preferred language across all roles, followed by SQL and R.
+1. **Salary & Role Distribution:** 
+   * Compensation varies significantly across distinct data roles and industries, highlighting high-demand specializations within the market.
+2. **Career Transition & Entry Barriers:** 
+   * A substantial portion of professionals successfully switched careers into data, though many reported moderate-to-high difficulty during their initial entry phase.
+3. **Job Satisfaction Drivers:** 
+   * Analysis of workplace happiness indicators reveals strong correlations between work-life balance, learning opportunities, and overall job retention.
+     
+
+_**Strategic Recommendations**_
+
+* **Targeted Upskilling:** Focus learning paths on high-demand programming languages and core technical skills identified as market drivers.
+* **Streamlined Entry Pathways:** Use survey findings to better support career transitioners entering the data ecosystem through structured training programs.
+* **Interactive Filtering for Stakeholders:** Utilize Power BI slicers to enable recruiters and analysts to dynamically filter insights by country, role, and salary range.
 
 
 _**Repository Structure**_
 
 ```text
+├── assets/
+│   ├── dashboard preview.gif          # gif of the Power BI dashboard
+|   └── dashboard-preview.png          # Screenshot image of the Power BI dashboard
 ├── data/
-│   └── Data_Professional_Survey.xlsx   <-- Raw dataset
-├── Power BI - Final Project.pbix       <-- Power BI report file
-├── dashboard preview.gif               <-- Dashboard screenshot for preview
-└── README.md                           <-- Project documentation
+│   └── Data_Professional_Survey.xlsx  # Cleaned survey dataset
+├── README.md                          # Project Documentation
+├── LICENSE                            # MIT License
+└── .gitignore                         # Git Ignore configuration
